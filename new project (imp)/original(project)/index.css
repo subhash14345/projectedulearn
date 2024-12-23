@@ -1,0 +1,243 @@
+
+/* * {
+    /* margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}*/
+body {
+    font-family: Arial, sans-serif;
+    height: 1000vh;
+    border: 2px solid #333;
+    box-sizing: border-box;
+} 
+/* menu icon */
+.menu-icon {
+    display: flex;
+    flex-direction:column;
+    cursor:pointer;
+    width: 32px;
+    margin: 0px 0px 0px -35px;
+    position: relative;
+    top: 1px;
+}
+  /*menu bars*/
+  .menu-icon div {
+    width: 35px;
+    height: 4px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.2s;
+  } 
+  /* Transform the bars when the icon is toggled */
+  .menu-icon.change .bar1 {
+    transform: rotate(-270deg) translate(18px, 9px);
+  }
+  .menu-icon.change .bar2 {
+    transform: rotate(-270deg) translate(3px, -2px);
+  }
+  .menu-icon.change .bar3 {
+    transform: rotate(-270deg) translate(-10px, -15px);
+  }
+  /*menu list (names)*/
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 7.5px;
+    width: 15%;
+    height: 1000vh;
+    border-radius: 18px;
+    background-color: #454141;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 450;
+  }
+  aside ol{ 
+    color: white;
+    font-size: medium;
+  } 
+  /* .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  } */
+  /* .nav-menu ul li {
+    padding: 15px;
+  } */
+  .nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .nav-menu.show {
+    display:flex;
+  }
+/* .navbar{
+  margin: auto 0;
+} */
+/* aside{
+  background: blueviolet;
+  display: flex;
+  width: auto;
+  position: relative;
+  justify-content: space-between;
+  text-align:center;
+  padding: 2px 25px;
+} */
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2em;
+}
+.h1{
+    background-color:chocolate;
+    top: 0;
+    max-width: 240px;
+    border-radius: 20px;
+    max-height: fit-content;
+    font-size: 25px;
+}
+/* navbarmain */
+.navbarmain{
+    position:fixed;
+    width: 80%;
+    top: 0px;
+    left: 200px;
+    max-height: 120px;
+    border-radius: 56px;
+}
+/*search bar*/
+header .search-bar{
+    display: flex;
+    margin: auto 0;
+    /* height: 28px; */
+    line-height: 40px;
+    max-width: fit-content;
+  }
+  header .search-bar input{
+    border: none;
+    outline:none;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+/*header background*/
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    width: auto;
+}
+section {
+    padding: 2em;
+    margin: 1em;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 1em;
+
+}
+.course {
+    background: #f4f4f4;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+/*button*/
+button {
+     padding: 0.2em 0.1em;
+    margin: 0.4em; 
+    border: none;
+    background: #333333;
+    color: #fff;
+    cursor: pointer;
+}
+/* button:hover {
+    background: #8f2449;
+    border-radius: 8px;
+    position:relative;
+    bottom: 10px;
+} */
+/*login button */
+.loginbtn{
+    font-size: 20px;
+    /* position: relative;
+    left: 700px;
+    top: -150px; */
+    background: #8f2449;
+    padding: 0.8rem;
+    border-radius: 16px 10px;
+    justify-content: right;
+
+}
+.loginbtn:hover{
+    background-color: #31a588;
+    border-radius: 9px;
+    padding: 0.8rem;
+    color: #454141;
+}
+
+/* hover to courses  */
+ul{
+    list-style: none;
+    width: fit-content;
+    position: relative;
+    top: -70px;
+    left: 300px;
+}
+ ul li{
+    display: inline-block;  
+}
+nav ul li a{
+    display: block;
+    padding: 5px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    /* position: relative; */
+    /* top: 50px; */
+}
+ul li ul.dropdown1 li {
+    display: block;
+
+}
+ul li ul.dropdown1 {
+    width: 100px;
+    background: rgb(167, 136, 136);
+    position:absolute;
+    top: auto;
+    left: auto;
+    z-index: 999;
+    display:none;
+}
+ul li a:hover {
+    background: green;
+    color: #030303;
+    border-radius: 19px;
+}
+ul li:hover ul.dropdown1{
+    display: block;
+    border-radius: 9px;
+    width: 80px;
+    text-align:left;
+    font-size: 15px;
+}
+/* courses section */
+#courses{
+    background-color: #787575;
+    border: 2px #5c5b5b solid;
+    padding-left: 5px;
+}
+.content{
+    background: #4f4f4f;
+    height: 100%;
+    width: 80%;
+    margin: 0 204px;
+}

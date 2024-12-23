@@ -1,0 +1,272 @@
+/* Basic reset */
+
+/* Header styling */
+header {
+    width: fit-content;
+    background-color: #333;
+}
+/* nav{
+    top: 10px
+} */
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2em;
+}
+/* Logo styling menu bar */
+/* .logo {
+    font-size: 1.5em;
+    color: white;
+    width:fit-content; 
+} */
+
+/* Links styling */
+/* .nav-links {
+    list-style:url(www.google.com);
+    display:flex;
+}
+
+.nav-links li {
+    margin: 0 1em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+    width:fit-content;
+}
+
+/* Mobile menu icon 
+.hamburger {
+    display: none;
+    flex-direction:column;
+    cursor: pointer;
+}
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px;
+    border-radius: 5px;
+} */
+/* Basic reset */
+.h1{
+    background-color:chocolate;
+    top: 0;
+    max-width: 940px;
+    border-radius: 20px;
+    max-height: fit-content;
+    font-size: 25px;
+}
+/* navbarmain */
+.navbarmain{
+    position:relative;
+    width: 72%;
+    top: 0px;
+    left: 60px;
+    max-height: 135px;
+    border-radius: 56px;
+}
+/* .search-bar{
+    position: relative;
+    left: -560px;
+} */
+header .search-bar{
+    display: flex;
+    margin: auto 0;
+    /* height: 28px; */
+    line-height: 40px;
+    max-width: fit-content;
+  }
+  
+  header .search-bar input{
+    border: none;
+    outline:none;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+} */
+/* Navigation styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    width: auto;
+}
+section {
+    padding: 2em;
+    margin: 1em;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 1em;
+
+}
+.course {
+    background: #f4f4f4;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+/* Quiz buttons */
+button {
+    padding: 0.2em 0.1em;
+    margin: 0.4em;
+    border: none;
+    background: #333333;
+    color: #fff;
+    cursor: pointer;
+}
+/* button:hover {
+    background: #8f2449;
+    border-radius: 8px;
+    position:relative;
+    bottom: 10px;
+} */
+.loginbtn{
+    font-size: 20px;
+    position: relative;
+    left: 220px;
+    bottom: 25px;
+    background: #8f2449;
+    padding: 0.8rem;
+    border-radius: 16px 10px;
+}
+.loginbtn:hover{
+    background-color: #31a588;
+    border-radius: 9px;
+    padding: 0.8rem;
+}
+/* hover to courses  */
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+
+}
+ul li a{
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    /* position: relative;
+    bottom: 10px; */
+}
+ul li ul.dropdown1 li {
+    display: block;
+
+}
+ul li ul.dropdown1 {
+    width: 100px;
+    background: rgb(77, 49, 49);
+    position:absolute;
+    z-index: 999;
+    display:none;
+}
+ul li a:hover {
+    background: green;
+    color: #030303;
+    border-radius: 19px;
+}
+ul li:hover ul.dropdown1{
+    display: block;
+    border-radius: 9px;
+    width: 140px;
+    font-size: 15px;
+}
+/* courses section */
+#courses{
+    background-color: #787575;
+    border: 2px #5c5b5b solid;
+    padding-left: 5px;
+}
+
+/* menu icon */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+    width: 35px;
+    margin: 25px 0px;
+    position: relative;
+    top: 1px;
+}
+  
+  .menu-icon div {
+    width: 35px;
+    height: 4px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.2s;
+  }
+  
+  /* Transform the bars when the icon is toggled */
+  .menu-icon.change .bar1 {
+    transform: rotate(-270deg) translate(18px, 30px);
+  }
+  
+  .menu-icon.change .bar2 {
+    
+    transform: rotate(-270deg) translate(3px, 15px);
+  }
+  
+  .menu-icon.change .bar3 {
+    transform: rotate(-270deg) translate(-10px, -2px);
+  }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 106px;
+    width: auto;
+    height: 100%;
+    background-color: #333;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-menu ul li {
+    padding: 15px;
+  }
+  .nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .nav-menu.show {
+    display:flex
+  }
+.navbar{
+  margin: auto 0;
+}
+aside{
+  background: blueviolet;
+  display: flex;
+  width: auto;
+  position: relative;
+  justify-content: space-between;
+  text-align:center;
+  padding: 2px 25px;
+}
